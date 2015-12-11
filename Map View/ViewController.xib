@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="mapView" destination="LAO-cB-Iaw" id="kkO-JP-7At"/>
+                <outlet property="searchBar" destination="KMp-J0-FU7" id="b2w-r2-KnZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="RXB-Hi-GJY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LAO-cB-Iaw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </mapView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1Y-ig-zmq">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="gd8-tU-n2S"/>
+                        <barButtonItem style="plain" id="jlH-ei-2Nu">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="57U-er-vIy">
+                                <rect key="frame" x="14" y="7" width="292" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Hybrid"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setMap:" destination="-1" eventType="valueChanged" id="fam-qa-Fj9"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="XD5-qr-GGY"/>
+                    </items>
+                </toolbar>
+                <searchBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-J0-FU7">
+                    <rect key="frame" x="0.0" y="19" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LAO-cB-Iaw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4kk-K5-hqD"/>
+                <constraint firstItem="KMp-J0-FU7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7fe-6f-d5f"/>
+                <constraint firstAttribute="trailing" secondItem="LAO-cB-Iaw" secondAttribute="trailing" id="D90-lo-a2y"/>
+                <constraint firstItem="G1Y-ig-zmq" firstAttribute="top" secondItem="LAO-cB-Iaw" secondAttribute="bottom" constant="-44" id="G8p-KM-N93"/>
+                <constraint firstItem="G1Y-ig-zmq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dJe-rg-wwO"/>
+                <constraint firstItem="LAO-cB-Iaw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hpI-dX-xor"/>
+                <constraint firstAttribute="trailing" secondItem="G1Y-ig-zmq" secondAttribute="trailing" id="mpT-T4-w2Y"/>
+                <constraint firstAttribute="trailing" secondItem="KMp-J0-FU7" secondAttribute="trailing" id="u3K-sf-rFd"/>
+                <constraint firstAttribute="bottom" secondItem="G1Y-ig-zmq" secondAttribute="bottom" id="ukG-IZ-lXZ"/>
+            </constraints>
+            <point key="canvasLocation" x="316" y="347"/>
+        </view>
+    </objects>
+</document>

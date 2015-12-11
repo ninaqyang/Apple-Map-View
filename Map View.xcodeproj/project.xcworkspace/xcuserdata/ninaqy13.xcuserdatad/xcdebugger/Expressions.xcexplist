@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ViewController mapView:annotationView:calloutAccessoryControlTapped:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.webViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__47-[ViewController searchBarSearchButtonClicked:]_block_invoke:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "results">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
